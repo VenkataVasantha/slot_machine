@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BootStrap</title>
+		<meta charset ="UTF-8">
+		<meta lan = "en">
+		<link rel="stylesheet" type="text/css" href="boots.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js">
+		</script>
+		<link rel="stylesheet" type="text/css" href="boots.css">
+		<script type="text/javascript" src ="boots.js"></script>
+	</head>
+	<body>
+		<div id = "header">
+			<p> Slot Effect using BootStrap</p>
+      <br>
+      <p>Created a slot machine effect using boostrap carousel. Once you click on the stop button, the game ends. If you want to try another spin, need to reload the page  again</p>
+		</div>
+    <div id="result" style="text-align:center;
+    "></div>
+		<div id = "container"><!-- wrap @img width -->  
+			<div id ="left"><!--First container!-->
+				<div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="10">
+    			<div class="carousel-inner vertical" role="listbox" id="s1">
+      			<div class="slot1 item active" id="slot-1"></div>
+      			<div class="slot1 item"></div>
+      		</div>
+       	</div>
+      </div><!--Ends the first part!-->
+      <div id ="center"><!--Begins the center part!-->
+      	<div id="carousel-2" class="carousel slide" data-ride="carousel" data-interval="5">
+    	   	<div class="carousel-inner vertical" role="listbox">
+    				<div class="slot2 item active" id="slot-2"></div>
+            <div class="slot2 item"></div>
+      		</div>
+      	</div>
+      </div>
+      <div id ="right"><!--Starts the right part!-->
+       	<div id="carousel-3" class="carousel slide" data-ride="carousel" data-interval="1">
+    		  <div class="carousel-inner vertical" role="listbox">
+    				<div class="slot3 item active" id="slot-3"></div>
+            <div class="slot3 item"></div>
+    			</div>
+       	</div><!--Ends the right part!-->	
+      </div><!--Ends the container part!-->
+		<div id ="footer">
+			<button id ="start">Start</button>
+			<button id ="stop">Stop</button>
+		</div>	
+	</body>
+</html>	
